@@ -3,7 +3,6 @@
 import random
 from DiceDrawings import print_dice
 
-
 ## Constants ##
 WINNING_SCORE = 100
 
@@ -12,6 +11,9 @@ class Player:
     def __init__(self, name):
         self.name = name
         self.turn_total = 0
+        self.total_score = 0
+
+    def clear_score(self):
         self.total_score = 0
 
 
